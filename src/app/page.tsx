@@ -1,5 +1,9 @@
 import Image from "next/image";
-import Foto from "./../assets/undraw_Lost_online_re_upmy 1.svg";
+import Foto from "./../assets/image/illustration.svg";
+import Smile from "./../assets/image/smile.svg";
+import Email from "./../assets/image/email.svg";
+import Instagram from "./../assets/image/instagram.svg";
+import Phone from "./../assets/image/phone.svg";
 
 export default function Home() {
   return (
@@ -42,10 +46,123 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex items-center justify-center text-center mt-28">
+      <div className="flex flex-col items-center justify-center text-center mt-28">
         <section className="flex flex-col items-center justify-center max-w-2xl">
-            <h2 className="font-bold text-3xl mb-6">Sobre mim</h2>
-            <span className="text-lg text-zinc-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</span>
+          <h2 className="font-bold text-3xl mb-6">Sobre mim</h2>
+          <span className="text-lg text-zinc-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident
+          </span>
+        </section>
+
+        <section className="flex flex-row mt-16">
+          <div className="flex flex-col items-center mr-12">
+            <div className="border border-transparent rounded-full p-3 bg-zinc-800 mb-4">
+              <Image src={Smile} width={32} height={32} alt="Smile icon" />
+            </div>
+            <strong>Meu nome</strong>
+            <p className="text-zinc-500">Victor Marques</p>
+          </div>
+
+          <div className="flex flex-col items-center justify-center mr-12">
+            <div className="border border-transparent rounded-full p-3 bg-zinc-800 mb-4">
+              <Image src={Email} width={32} height={32} alt="Email icon" />
+            </div>
+            <strong>E-mail</strong>
+            <p className="text-zinc-500">victorsmarqs@gmail.com</p>
+          </div>
+
+          <div className="flex flex-col items-center justify-center mr-12">
+            <div className="border border-transparent rounded-full p-3 bg-zinc-800 mb-4">
+              <Image
+                src={Instagram}
+                width={32}
+                height={32}
+                alt="Instagram icon"
+              />
+            </div>
+            <strong>Instagram</strong>
+            <p className="text-zinc-500">---</p>
+          </div>
+
+          <div className="flex flex-col items-center justify-center">
+            <div className="border border-transparent rounded-full p-3 bg-zinc-800 mb-4">
+              <Image src={Phone} width={32} height={32} alt="Phone icon" />
+            </div>
+            <strong>Telefone</strong>
+            <p className="text-zinc-500">(55) 99916-6533</p>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <h2 className="flex justify-center font-bold text-3xl mt-28 mb-8">
+          Projetos
+        </h2>
+        <section className="grid gap-x-12 gap-y-8 grid-cols-3 justify-center text-center">
+          <div className="border border-zinc-700 p-6 bg-zinc-800">
+            <div className="border border-zinc-700 bg-red-50 mb-6">
+              <Image src={Phone} width={150} height={65} alt="Phone icon" />
+            </div>
+            <div className="flex flex-col text-start">
+              <strong className="text-lg">Título</strong>
+              <p className="text-zinc-500">Tecnologias: HTML, CSS e JS.</p>
+            </div>
+          </div>
+
+          <div className="border border-zinc-700 p-6 bg-zinc-800">
+            <div className="border border-zinc-700 bg-red-50 mb-6">
+              <Image src={Phone} width={150} height={65} alt="Phone icon" />
+            </div>
+            <div className="flex flex-col text-start">
+              <strong className="text-lg">Título</strong>
+              <p className="text-zinc-500">Tecnologias: HTML, CSS e JS.</p>
+            </div>
+          </div>
+          
+          <div className="border border-zinc-700 p-6 bg-zinc-800">
+            <div className="border border-zinc-700 bg-red-50 mb-6">
+              <Image src={Phone} width={150} height={65} alt="Phone icon" />
+            </div>
+            <div className="flex flex-col text-start">
+              <strong className="text-lg">Título</strong>
+              <p className="text-zinc-500">Tecnologias: HTML, CSS e JS.</p>
+            </div>
+          </div>
+          
+          <div className="border border-zinc-700 p-6 bg-zinc-800">
+            <div className="border border-zinc-700 bg-red-50 mb-6">
+              <Image src={Phone} width={150} height={65} alt="Phone icon" />
+            </div>
+            <div className="flex flex-col text-start">
+              <strong className="text-lg">Título</strong>
+              <p className="text-zinc-500">Tecnologias: HTML, CSS e JS.</p>
+            </div>
+          </div>
+          
+          <div className="border border-zinc-700 p-6 bg-zinc-800">
+            <div className="border border-zinc-700 bg-red-50 mb-6">
+              <Image src={Phone} width={150} height={65} alt="Phone icon" />
+            </div>
+            <div className="flex flex-col text-start">
+              <strong className="text-lg">Título</strong>
+              <p className="text-zinc-500">Tecnologias: HTML, CSS e JS.</p>
+            </div>
+          </div>
+          
+          <div className="border border-zinc-700 p-6 bg-zinc-800">
+            <div className="border border-zinc-700 bg-red-50 mb-6">
+              <Image src={Phone} width={150} height={65} alt="Phone icon" />
+            </div>
+            <div className="flex flex-col text-start">
+              <strong className="text-lg">Título</strong>
+              <p className="text-zinc-500">Tecnologias: HTML, CSS e JS.</p>
+            </div>
+          </div>
         </section>
       </div>
     </div>
