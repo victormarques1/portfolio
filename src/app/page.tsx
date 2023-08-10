@@ -4,13 +4,13 @@ import Smile from "./../assets/image/smile.svg";
 import Email from "./../assets/image/email.svg";
 import Instagram from "./../assets/image/instagram.svg";
 import Phone from "./../assets/image/phone.svg";
-import Html from "./../assets/image/html.svg";
-import Css from "./../assets/image/css.svg";
+import Typescript from "./../assets/image/typescript.svg";
+import Node from "./../assets/image/node.svg";
 import Js from "./../assets/image/javascript.svg";
 import Tailwind from "./../assets/image/tailwind.svg";
 import React from "./../assets/image/react.svg";
 import Next from "./../assets/image/next.svg";
-
+import Micday from "./../assets/projects/login.png"
 import Link from "next/link";
 
 export default function Home() {
@@ -116,7 +116,7 @@ export default function Home() {
         <section className="grid gap-x-12 gap-y-8 grid-cols-3 justify-center text-center">
           <div className="border border-zinc-700 p-6 bg-zinc-800">
             <div className="border border-zinc-700 bg-red-50 mb-6">
-              <Image src={Phone} width={150} height={65} alt="Phone icon" />
+              <Image className="w-full" src={Micday} alt="Phone icon" />
             </div>
             <div className="flex flex-col text-start">
               <strong className="text-lg">Título</strong>
@@ -177,21 +177,15 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col">
-        <h2 className="flex justify-center font-bold text-3xl mt-28 mb-8">
-          Minhas skills
+        <h2 className="flex justify-center font-bold text-3xl mt-28 mb-8 text">
+          Principais skills
         </h2>
         <div className="grid grid-cols-6 gap-x-8 mb-12">
-            <div className="border border-zinc-700 bg-zinc-800 mb-4 flex justify-center">
-              <Image src={Html} width={70} height={70} alt="HTML icon" />
-            </div>
-            <div className="border border-zinc-700 p-4 bg-zinc-800 mb-4 flex justify-center">
-              <Image src={Css} width={70} height={70} alt="CSS icon" />
-            </div>
-            <div className="border border-zinc-700 p-4 bg-zinc-800 mb-4 flex justify-center">
+             <div className="border border-zinc-700 p-4 bg-zinc-800 mb-4 flex justify-center">
               <Image src={Js} width={70} height={70} alt="JavaScript icon" />
             </div>
-            <div className="border border-zinc-700 p-4 bg-zinc-800 mb-4 flex justify-center">
-              <Image src={Tailwind} width={70} height={70} alt="Tailwind icon" />
+            <div className="border border-zinc-700 bg-zinc-800 mb-4 flex justify-center">
+              <Image src={Typescript} width={70} height={70} alt="Typescript icon" />
             </div>
             <div className="border border-zinc-700 p-4 bg-zinc-800 mb-4 flex justify-center">
               <Image src={React} width={70} height={70} alt="React icon" />
@@ -199,13 +193,21 @@ export default function Home() {
             <div className="border border-zinc-700 p-4 bg-zinc-800 mb-4 flex justify-center">
               <Image src={Next} width={70} height={70} alt="Next icon" />
             </div>
+            
+            <div className="border border-zinc-700 p-4 bg-zinc-800 mb-4 flex justify-center">
+              <Image src={Tailwind} width={70} height={70} alt="Tailwind icon" />
+            </div>
+           
+            <div className="border border-zinc-700 p-4 bg-zinc-800 mb-4 flex justify-center">
+              <Image src={Node} width={100} height={100} alt="Node icon" />
+            </div>
           </div>
       </div>
 
       
     </div>
     <footer className="bg-zinc-800 w-full h-full p-4 flex justify-center items-center">
-        <p className="text-lg ">Orgulhosamente feito por <Link className="text-green-500 font-bold" href="https://github.com/victormarques1">Victor Marques</Link></p>
+        <p className="text-lg ">Desenvolvido por <Link className="text-green-500 font-bold" href="https://github.com/victormarques1">Victor Marques</Link></p>
       </footer>
     </div>
 
