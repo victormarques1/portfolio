@@ -87,10 +87,8 @@ export default function Home() {
             </div>
           </section>
           <Image
-            className="border border-x-2 rounded-full border-zinc-700"
+            className="border border-x-2 rounded-full border-zinc-700 max-w-[270px] max-h-[270px]"
             src={Foto}
-            width={270}
-            height={205}
             alt="Picture of the author"
           />
         </div>
