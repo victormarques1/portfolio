@@ -9,8 +9,11 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 
 import About from "@/components/About";
-import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Micday from "@/components/projects/Micday";
+import Barber from "@/components/projects/Barber";
+import Carros from "@/components/projects/Carros";
+import DevLink from "@/components/projects/DevLink";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,7 +73,7 @@ export default function Home() {
         >
           <section>
             <h2 className="md:text-4xl text-2xl font-bold">
-              Olá, eu sou o <br></br> Victor Marques :)
+              Olá, eu sou o <br></br> Victor Marques 👋
             </h2>
             <p className="py-4 text-zinc-500 md:text-lg font-medium mt-2 mb-4">
               Desenvolvedor Full Stack
@@ -93,7 +96,20 @@ export default function Home() {
           />
         </div>
         <About />
-        <Projects />
+        <div>
+          <h2
+            id="projects"
+            className="flex justify-center font-bold md:text-3xl text-2xl md:mt-28 mt-14 mb-8 md:mb-10"
+          >
+            Projetos recentes
+          </h2>
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 justify-center text-center">
+            <Micday />
+            <Barber />
+            <Carros />
+            <DevLink />
+          </section>
+        </div>
         <Skills />
       </div>
       <footer className="bg-zinc-800 w-full h-full p-4 flex justify-center items-center">
