@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { MdClose, MdOutlineMailOutline, MdOutlinePhone } from "react-icons/md";
+import { MdOutlineMailOutline, MdOutlinePhone } from "react-icons/md";
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 
 export default function About(){
@@ -34,11 +34,11 @@ export default function About(){
               </div>
               <strong>LinkedIn</strong>
               <Link
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/victor-marques1"
                 target="_blank"
                 className="text-zinc-500 hover:text-blue-300"
               >
-                /victormarqs1
+                /victor-marques1
               </Link>
             </div>
 
