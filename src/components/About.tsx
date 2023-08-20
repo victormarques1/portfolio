@@ -34,7 +34,7 @@ export default function About(){
               </div>
               <strong>LinkedIn</strong>
               <Link
-                href="https://www.linkedin.com/victor-marques1"
+                href="https://www.linkedin.com/in/victor-marques1/"
                 target="_blank"
                 className="text-zinc-500 hover:text-blue-300"
               >
