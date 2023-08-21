@@ -79,9 +79,11 @@ export default function Home() {
               Desenvolvedor Full Stack
             </p>
             <div className="flex md:flex-row flex-col font-medium md:text-lg ">
-              <button className="mr-4 text-neutral-900 bg-blueshirt hover:font-semibold py-3 px-8 mb-2 md:mb-0">
-                Download CV
-              </button>
+              <Link href="/CV_VictorMarques.pdf" target="_blank" download="CV_VictorMarques.pdf">
+                <button className="mr-4 text-neutral-900 bg-blueshirt hover:font-semibold py-3 px-8 mb-2 md:mb-0">
+                  Download CV
+                </button>
+              </Link>
               <Link href="mailto:victorsmarqs@gmail.com">
                 <button className="border border-zinc-700 hover:font-semibold py-3 px-6 mb-14 md:mb-0">
                   Entrar em contato
